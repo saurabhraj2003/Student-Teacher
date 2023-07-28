@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300&family=Montserrat:wght@700&family=PT+Serif&family=Roboto:wght@300&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="./img/calendar.png" alt=""></div>
+      <ul class="links">
+        <li ><a href="index.html" class="nav">Home</a></li>
+        <li ><a href="index.html"class="nav">About</a></li>
+        <li ><a href="index.html" class="nav">Contact</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Login/Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="student-login.html">Student</a>
+            <a href="teacher-login.html">Teacher</a>
+            <a href="admin-login.html">Admin</a>
+          </div>
+        </div>
+      </ul>
+      <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+
+    <div class="toggle">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Contact</a></li>
+      <li><div class="dropdown">
+          <button class="dropbtn">
+            Login/Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="student-login.html">Student</a>
+            <a href="teacher-login.html">Teacher</a>
+            <a href="admin-login.html">Admin</a>
+          </div></li>
+      </div>
+    </div>
+  </header>
+      <main>
+        <div class="reg-alert"><h3>Congratulations!</h3>Your signup is successful</div>
+        <div class="register-box">
+            <form action="" class="form" onsubmit="signup(event)">
+                <h2 class="loginname">Sign Up</h2>
+                <div class="input">
+                    <input type="text" name="fname" id="fname" placeholder="Full Name" class="fullName" required>
+                </div>
+                <div class="input">
+                    <input type="text" name="roll" id="roll" placeholder="Roll No" class="rollno" required>
+                </div>
+                <div class="input">
+                    <div class="input-name">
+                        <label for="email">Email</label>
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                    <input type="email" name="email" id="email" class="emailid" required>
+                </div>
+                <div class="input">
+                    <div class="input-name">
+                        <label for="password">Password</label>
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span></div>
+                    <input type="password" name="password" id="password" class="pass" required>
+                </div>
+                <div class="input"> <button type="submit" class="btn">Sign Up</button></div>
+                <div class="register">
+                    <p>Already have an account? <a href="student-login.html">login</a></p>
+                </div>
+            </form>
+        </div>
+      </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="./Javascript/app.js" type="module"></script>
+      <script src="./Javascript/registration.js" type="module"></script>
+</body>
+</html> 
