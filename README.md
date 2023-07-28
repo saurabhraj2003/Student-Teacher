@@ -1,1 +1,1 @@
-amw,ebfrgltkr.lewjrlrhgwivsd
+The Student-Teacher Booking Appointment System aims to provide a user-friendly interface for students and teachers to schedule appointments efficiently. By following the setup instructions and guidelines, users can easily interact with the system to book and manage appointments in a hassle-free manner. For any issues or inquiries, feel free to refer to the provided documentation or contact the system administrator.
